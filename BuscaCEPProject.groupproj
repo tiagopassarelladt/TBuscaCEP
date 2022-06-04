@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4F60BAC5-4735-4230-890E-4038815E6B7B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="compBuscaCEP.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Exemplo\ExemploBuscaCEPProject.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="compBuscaCEP">
+        <MSBuild Projects="compBuscaCEP.dproj"/>
+    </Target>
+    <Target Name="compBuscaCEP:Clean">
+        <MSBuild Projects="compBuscaCEP.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="compBuscaCEP:Make">
+        <MSBuild Projects="compBuscaCEP.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ExemploBuscaCEPProject">
+        <MSBuild Projects="Exemplo\ExemploBuscaCEPProject.dproj"/>
+    </Target>
+    <Target Name="ExemploBuscaCEPProject:Clean">
+        <MSBuild Projects="Exemplo\ExemploBuscaCEPProject.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExemploBuscaCEPProject:Make">
+        <MSBuild Projects="Exemplo\ExemploBuscaCEPProject.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="compBuscaCEP;ExemploBuscaCEPProject"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="compBuscaCEP:Clean;ExemploBuscaCEPProject:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="compBuscaCEP:Make;ExemploBuscaCEPProject:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

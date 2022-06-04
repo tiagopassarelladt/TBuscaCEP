@@ -1,0 +1,179 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 387
+  ClientWidth = 417
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 136.000000000000000000
+    Position.Y = 72.000000000000000000
+    TabOrder = 1
+    Text = 'Buscar'
+    OnClick = Button1Click
+  end
+  object Label1: TLabel
+    StyledSettings = [Family, Size]
+    Position.X = 24.000000000000000000
+    Position.Y = 48.000000000000000000
+    TextSettings.FontColor = claCoral
+    Text = 'CEP'
+  end
+  object edtCEP: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Position.X = 24.000000000000000000
+    Position.Y = 72.000000000000000000
+  end
+  object edtLogradouro: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 11
+    Position.X = 128.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object edtComlemento: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 12
+    Position.X = 128.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object edtBairro: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 13
+    Position.X = 128.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object edtCidade: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 14
+    Position.X = 128.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object edtUF: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 15
+    Position.X = 128.000000000000000000
+    Position.Y = 248.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object edtUnidade: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 16
+    Position.X = 128.000000000000000000
+    Position.Y = 280.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object edtIBGE: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 17
+    Position.X = 128.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object edtGIA: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 18
+    Position.X = 128.000000000000000000
+    Position.Y = 344.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label3: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 120.000000000000000000
+    Text = 'Logradouro'
+  end
+  object Label4: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 151.000000000000000000
+    Text = 'Complemento'
+  end
+  object Label5: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 184.000000000000000000
+    Text = 'Bairro'
+  end
+  object Label6: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 215.000000000000000000
+    Text = 'Cidade'
+  end
+  object Label7: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 246.000000000000000000
+    Text = 'UF'
+  end
+  object Label8: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 279.000000000000000000
+    Text = 'Unidade'
+  end
+  object Label9: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 311.000000000000000000
+    Text = 'IBGE'
+  end
+  object Label2: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 344.000000000000000000
+    Text = 'GIA'
+  end
+  object cbbServidor: TComboBox
+    Items.Strings = (
+      'ViaCEP'
+      'WebMania')
+    Position.X = 248.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+  end
+  object Label10: TLabel
+    StyledSettings = [Family, Size]
+    Position.X = 248.000000000000000000
+    Position.Y = 48.000000000000000000
+    TextSettings.FontColor = claForestgreen
+    Text = 'Servidor'
+  end
+  object Label11: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 24.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 361.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    Text = 'Exemplo Componente TBuscaCEP'
+  end
+  object BuscaCEP: TBuscaCEP
+    Servidor = ViaCEP
+    URLViaCEP = 'https://viacep.com.br/ws/%s/json/unicode/'
+    URLWebMania = 'https://webmaniabr.com/api/1/cep/%s/?app_key=%s&app_secret=%s'
+    Left = 336
+    Top = 8
+  end
+end
